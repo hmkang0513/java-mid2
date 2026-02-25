@@ -25,5 +25,11 @@ public class WildcardMain1 {
 
         Animal animal = WildCardEx.printAndReturnWildcard(dogBox);
         System.out.println("animal = " + animal);
+
+        catBox.set(new Cat("야옹이",50));
+        Cat cat = WildCardEx.printAndReturnGeneric(catBox);
+        System.out.println("cat = " + cat);
+
+        Dog dog2 = (Dog) WildCardEx.printAndReturnWildcard(dogBox);
     }
 }
