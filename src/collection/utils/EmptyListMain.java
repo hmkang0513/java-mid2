@@ -1,9 +1,6 @@
 package collection.utils;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class EmptyListMain {
     public static void main(String[] args) {
@@ -17,5 +14,18 @@ public class EmptyListMain {
 
         System.out.println("List3 = " + list3.getClass());
         System.out.println("List4 = " + list4.getClass());
+
+        List<Integer> list5 = Arrays.asList(1, 2, 3);
+        List<Integer> list6 = List.of(1, 2, 3);
+
+        Integer[] arr = {1, 2, 3, 4, 5};
+
+        List<Integer> arrList = Arrays.asList(arr);
+        List<Integer> arr1 = List.of(arr);
+
+        arrList.set(0, 100);
+
+        System.out.println("arr = " + Arrays.toString(arr));
+        System.out.println("arrList = " + arrList);
     }
 }
